@@ -29,8 +29,7 @@ patch(MrpDisplayRecord.prototype, {
             params.context = { skip_redirection: true };            
             let methodName = "pre_button_mark_done";
             if (this.trackingMode === "mass_produce") {
-                methodName = "action_serial_mass_produce_wizard";
-                params.mark_as_done = true;
+                methodName = "action_mass_produce";
             }
             const action = await this.model.orm.call("mrp.production", methodName, args, params);
             // If there is a wizard while trying to mark as done the production, confirming the
@@ -43,5 +42,6 @@ patch(MrpDisplayRecord.prototype, {
         // Makes the validation taking a little amount of time (see o_fadeout_animation CSS class).
         this.props.addToValidationStack(this.props.record, () => this.realValidation());
         this.state.underValidation = true;
+    
     },
 })
