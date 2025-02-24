@@ -18,7 +18,7 @@
       'depends': ['stock_barcode'],
      'assets': {
         'web.assets_backend': [
-            'stock_barcode_improvements/static/src/**/*.js'
+            'mrp_workorder_shopfloor_temporary_fix/static/src/**/*.js'
         ]
      },
     # always loaded
