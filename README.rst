@@ -1,19 +1,14 @@
 Title
 =======
+Mrp workorder shopfloor temporary fix
+
+
 
 Description
 ==============
 
-Configuration
-=============
+In attesa di merge https://github.com/odoo/enterprise/pull/79918
 
-Usage
-=====
-Description usage
-
-
-Dependencies
-===============
 
 
 Credits
@@ -27,4 +22,4 @@ Authors
 Contributors
 ~~~~~~~~~~~~
 
-* Moccia Francesco <moccia.f@stesi.consulting>
+* Michele <dicroce.m@stesi.consulting>

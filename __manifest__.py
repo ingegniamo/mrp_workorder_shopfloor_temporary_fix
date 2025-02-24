@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "",
+    'name': "Mrp workorder temporary fix",
     
     'summary': "",
   
@@ -12,11 +12,15 @@
   
     'version': '18.0.0.1',
   
-    'website'METTERE LINK GITHUB completo: "https://github.com/ingegniamo",
+    'website': "https://github.com/ingegniamo/mrp_workorder_shopfloor_temporary_fix",
 
     # any module necessary for this one to work correctly
-    'depends': [],
-    
+      'depends': ['stock_barcode'],
+     'assets': {
+        'web.assets_backend': [
+            'stock_barcode_improvements/static/src/**/*.js'
+        ]
+     },
     # always loaded
     'data': [],
 
